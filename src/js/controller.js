@@ -126,7 +126,9 @@ const controlAddRecipe = async function (newRecipe) {
     // Mark for reset after error so next open will be clean
     addRecipeView.markForReset();
   }
-
+  const newFeature = function () {
+    console.log('Welcome to the application!');
+  };
   // UpdateRecipeData
 };
 const init = function () {
@@ -137,6 +139,7 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  newFeature();
 };
 
 init();
