@@ -126,10 +126,11 @@ const controlAddRecipe = async function (newRecipe) {
     // Mark for reset after error so next open will be clean
     addRecipeView.markForReset();
   }
-  const newFeature = function () {
-    console.log('Welcome to the application!');
-  };
+
   // UpdateRecipeData
+};
+const newFeature = function () {
+  console.log('Welcome to the application!');
 };
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmars);
